@@ -18,7 +18,7 @@ class CreateConsultantInfosTable extends Migration
 
             $table->string('first_name');
             $table->string('last_name');
-            $table->string('avatar')->nullable();
+            $table->string('avatar')->default('consultant.jpg');
             $table->date('birthday')->nullable();
             $table->text('about_me')->nullable();
             $table->string('email');
