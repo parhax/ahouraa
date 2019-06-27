@@ -5,7 +5,18 @@
         <div class="row justify-content-center">
             <div class="col-md-8">
                 <div class="card">
-                    <div class="card-header">All Consultants info pages</div>
+                    <div class="card-header">
+                        <div class="d-flex align-items-center">
+                            <h2>Consultant infos List </h2>
+                            <div class="ml-auto">
+                                <a href="{{route('consultantInfos.create')}}" class="btn btn-outline-secondary">
+                                    Create a new Consultant profile
+                                </a>
+
+                            </div>
+                        </div>
+
+                    </div>
 
                     <div class="card-body">
                         @foreach($consultantInfos as $ConsultantInfo)

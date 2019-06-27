@@ -25,7 +25,8 @@ class ConsultantInfoController extends Controller
      */
     public function create()
     {
-        //
+        $consultantInfo = new ConsultantInfo();
+        return view('consultantInfos.create',compact('consultantInfo'));
     }
 
     /**
