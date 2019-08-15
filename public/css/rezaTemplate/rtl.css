@@ -1,0 +1,322 @@
+.tg-topbar {
+    direction: rtl;
+}
+.tg-dropdownbox > ul > li > a {
+    text-align: right;
+    direction: rtl;
+}
+.tg-navigation ul li a {
+    text-align: right;
+}
+.tg-navigation > ul > li.tg-hasdropdown > a {
+    padding: 0 0 43px 15px;
+}
+.tg-navigation > ul > li.tg-hasdropdown > a:before {
+    left: 0;
+    right: unset;
+}
+.tg-contactinfo {
+    float: left;
+}
+.tg-quickadvice {
+    float: right;
+}
+.tg-contactinfo li {
+    float: right;
+}
+.tg-contactinfo li:first-child {
+    padding-left: 20px;
+    padding-right: 0;
+}
+.tg-contactinfo li + li:before {
+    left: unset;
+    right: -12px;
+}
+.tg-contactinfo li:last-child {
+    padding-right: 0;
+    padding-left: 0;
+}
+.tg-user .tg-usermenu em {
+    padding: 0 0 0 15px;
+}
+.tg-formsearch fieldset .form-control {
+    padding: 0 15px 0 65px;
+}
+.tg-user .tg-usermenu em:before {
+    right: unset;
+    left: 0;
+}
+.tg-adminpic {
+    float: right;
+    margin: 0 0 0 10px;
+}
+.tg-formsearch fieldset .tg-btnformsearch {
+    left: 0;
+    right: unset;
+}
+.tg-searchbulder {
+    float: right;
+}
+.tg-category {
+    float: right;
+}
+.tg-searchbulder {
+    float: right;
+}
+.tg-radio, .tg-radio label, .tg-checkbox, .tg-checkbox label {
+    float: right;
+}
+.tg-formsearch fieldset .tg-btnformsearch {
+    border-radius: 3px 0 0 3px;
+}
+.tg-features {
+    float: right;
+}
+.tg-statisticscounters {
+    float: right;
+}
+.tg-sectionimg {
+    float: right;
+}
+.tg-sectionhead {
+    float: right;
+}
+.tg-filterbalenav {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: horizontal;
+    -webkit-box-direction: reverse;
+        -ms-flex-direction: row-reverse;
+            flex-direction: row-reverse;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center
+}
+.tg-rightarea {
+    left: 0;
+    right: unset;
+}
+.tg-directpostimg {
+    float: right;
+    margin: 0 0 0 20px;
+    position: relative;
+}
+body.tg-home .tg-leftarea {
+    float: right;
+}
+.tg-directposthead {
+    float: right;
+}
+.tg-leftarea .tg-contactinfo li {
+    float: right;
+    text-align: right;
+}
+.tg-leftarea .tg-contactinfo {
+    float: right;
+    text-align: right;
+}
+.tg-leftarea .tg-contactinfo li a i {
+    margin: 0 0 0 8px;
+}
+.tg-directpostimg figcaption {
+    float: right;
+}
+.tg-usericon span {
+    padding: 0 0 0 8px;
+}
+.tg-bookappoinment > a i {
+    margin: 0 0 0 3px;
+}
+.tg-bookappoinment .tg-metadata li:first-child {
+    padding-right: 0;
+    padding-left: 8px;
+}
+.tg-bookappoinment .tg-metadata li:last-child {
+    padding-left: 0;
+    padding-right: 8px;
+}
+.tg-bookappoinment .tg-metadata li + li:before {
+    right: -5px;
+    left: unset
+}
+.tg-feedbackcontent .tg-metadata {
+    float: right;
+    direction: rtl
+}
+.tg-metadata li:first-child {
+    padding-left: 15px;
+    padding-right: 0;
+}
+.tg-metadata li:last-child {
+    padding-left: 0;
+    padding-right: 15px;
+}
+.tg-metadata li + li:before {
+    right: -2px;
+    left: unset
+}
+.tg-brands {
+    float: right;
+}
+.tg-brands figure {
+    float: right;
+}
+#tg-categoryslider .owl-wrapper-outer{
+direction: rtl
+}
+#tg-categoryslider .owl-item{
+float: right
+}
+.col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
+    float: right
+}
+.tg-directinfo{
+    direction: rtl
+}
+.tg-directpostimg figcaption .tg-usericon {
+    direction: rtl;
+}
+.col-md-offset-1 {
+    margin-right:8.33333333% ;
+    margin-left: unset;
+}
+.tg-regleftarea {
+    float: right;
+}
+.tg-regrightarea {
+    float: left;
+    padding: 10px 0 10px 100px;
+}
+.tg-latestnews {
+    width: 100%;
+    float: right;
+    direction: rtl;
+}
+.tg-postcontent {
+    float: right;
+    padding: 0 100px 0 0;
+}
+.tg-postdate {
+    right: 0;
+}
+.tg-posttitle {
+    float: right;
+}
+.tg-metadata li {
+    float: right;
+}
+.my-tg-metadata:last-child {
+    padding-left: 15px !important;
+    padding-right: 0 !important;
+}
+.tg-fcols {
+    direction: rtl;
+}
+.tg-formsubscribe fieldset .form-group {
+    float: right;
+}
+.tg-fcol .tg-logo {
+    float: right;
+}
+.tg-fcol .tg-contactinfo li i {
+    margin: 0 0 0 15px;
+}
+.tg-roundicontext i, .tg-roundicontext span {
+    float: right;
+}
+.tg-socialsharewithtext li {
+    float: right;
+}
+.tg-fcol.tg-specialities ul li a:after {
+    right: 0;
+left:unset
+}
+.tg-fcol.tg-specialities ul li a {
+    padding: 0 10px 0 0;
+}
+.tg-authordp {
+
+    float: right;
+}
+.tg-latestlistings ul li .tg-authordp {
+    margin: 0 0 0 10px;
+}
+.tg-btnviewmore {
+    float: right;
+}
+.tg-fcol.tg-specialities ul li a:hover {
+    padding: 0 15px 0 0;
+}
+.tg-fcol.tg-specialities ul li a:after {
+    content: '\f0da';
+    font-family: 'FontAwesome';
+    -webkit-transform: rotate(180deg);
+            transform: rotate(180deg)
+}
+.tg-nav, .tg-admin {
+    float: right;
+}
+.tg-dashboardbadge {
+    right:0;
+    left: -3px;
+}
+.tg-copyright {
+    float: left;
+}
+.tg-footernav {
+    float: right;
+}
+.tg-sectiontitle h1, .tg-sectiontitle h2 {
+    direction: rtl;
+}
+.tg-logo {
+    float: right;
+}
+.tg-navigationarea {
+    float: left;
+}
+.tg-quickadvice strong,.mynumber{
+    display: -webkit-inline-box;
+    display: -ms-inline-flexbox;
+    display: inline-flex;
+    direction: ltr;
+}
+@media (max-width:767px){
+    .tg-login .tg-admin {
+        margin: 0 12px 0 0;
+        padding: 2px 20px 0 0;
+    }
+    .tg-admin:before {
+        left: unset;
+        right: 0;
+    }
+    .col-md-offset-1 {
+        margin-right: 0;
+        margin-left: unset;
+    }
+    .tg-regrightarea {
+        padding: 10px 0 10px 0;
+    }
+    .col-sm-1, .col-sm-10, .col-sm-11, .col-sm-12, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9 {
+        float: unset;
+    }
+    .tg-dropdowarrow {
+        right: unset;
+        left: 15px;
+    }
+    .tg-navigation > ul > li.tg-hasdropdown > a {
+        padding: 0 0 0 15px;
+    }
+}
+@media (max-width:480px){
+    .tg-user .tg-usermenu em {
+        padding: 0 0 0 15px;
+    }
+    .tg-filterbalenav {
+        -webkit-box-orient: vertical;
+        -webkit-box-direction: normal;
+            -ms-flex-direction: column;
+                flex-direction: column;
+    }
+}
