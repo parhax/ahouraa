@@ -1,4 +1,5 @@
 <!doctype html>
+@php $locale = session()->get('locale'); @endphp
 
 <html class="no-js" lang="{{ str_replace('_', '-', app()->getLocale()) }}">
 <head>
@@ -80,133 +81,25 @@
                             <div id="tg-navigation" class="tg-navigation collapse navbar-collapse">
                                 <ul>
                                     <li class="tg-hasdropdown">
-                                        <a href="#">فهرست</a>
-                                        <ul class="tg-dropdownmenu">
-                                            <li><a href="searchresult-v1.html">Doctors</a></li>
-                                            <li><a href="searchresult-v2.html">Hospitals</a></li>
-                                            <li><a href="searchresult-v3.html">Spas</a></li>
-                                            <li><a href="searchresult-v1.html">Pharmacies</a></li>
-                                            <li><a href="searchresult-v2.html">Labs</a></li>
-                                            <li><a href="searchresult-v3.html">Fitness</a></li>
-                                            <li><a href="searchresult-v1.html">Clinics</a></li>
+                                        <a>Language <span class="caret"></span>
+                                        @switch($locale)
+                                            @case('fa')
+                                            <img src="{{asset('images/rezaTemplate/flags/png/iran.png')}}" width="30px" height="20x">  فارسی
+                                            @break
+                                            @default
+                                            <img src="{{asset('images/rezaTemplate/flags/png/usa.png')}}" width="30px" height="20x"> English
+                                        @endswitch
+                                        </a>
+                                            <ul class="tg-dropdownmenu">
+                                            <a href="lang/en"><img src="{{asset('images/rezaTemplate/flags/png/usa.png')}}" width="30px" height="20x"> English</a>
+                                            <a href="lang/fa"><img src="{{asset('images/rezaTemplate/flags/png/iran.png')}}" width="30px" height="20x"> فارسی </a>
                                         </ul>
                                     </li>
                                     <li><a href="aboutus.html">درباره ما</a></li>
                                     <li><a href="how-its-works.html">سایت چگونه کار میکند </a></li>
-                                    <li class="tg-hasdropdown">
-                                        <a href="javascript:void(0);">
-                                            <i class="hidden-xs fa fa-navicon"></i>
-                                            <span class="hidden-lg hidden-md hidden-sm">Pages</span>
-                                        </a>
-                                        <ul class="tg-dropdownmenu">
-                                            <li><a href="blogpostlist.html">Blog List</a></li>
-                                            <li><a href="blogpostgrid.html">Blog Grid</a></li>
-                                            <li><a href="blogpostdetail.html">Blog Detail</a></li>
-                                            <li><a href="doctor-overview-detail.html">Doctor Detail</a></li>
-                                            <li><a href="404.html">404</a></li>
-                                            <li><a href="commingsoon.html">Comming Soon</a></li>
-                                            <li><a href="signin-signup.html">Signin-Signup</a></li>
-                                        </ul>
-                                    </li>
                                 </ul>
                             </div>
                         </nav>
-                        <div class="tg-admin">
-                            <a class="tg-btn" href="#">عضو شوید</a>
-                            <div class="tg-user">
-                                <div class="tg-dropdown">
-                                    <figure class="tg-adminpic">
-                                        <span class="tg-dashboardbadge">3</span>
-                                        <a href="dashboard.html"><img src="images/rezaTemplate/icons/icon-41.png" alt="image description"></a>
-                                    </figure>
-                                    <a href="javascript:void(0);" class="tg-usermenu tg-btndropdown">
-                                        <em>howdy, Anjela doe!</em>
-                                    </a>
-                                    <div class="dropdown-menu tg-dropdownbox tg-usermenu">
-                                        <ul>
-                                            <li>
-                                                <a href="dashboard.html">
-                                                    <i class="fa fa-line-chart"></i>
-                                                    <span>Insights</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="dashboard-badgepopup.html">
-                                                    <i class="fa fa-line-chart"></i>
-                                                    <span>Insights-Two</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="dashboard-profilesetting.html">
-                                                    <i class="fa fa-user"></i>
-                                                    <span>Profile settings</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="dashboard-jobslocations.html">
-                                                    <i class="fa fa-location-arrow"></i>
-                                                    <span>Job Locations</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="dashboard-privatemessages.html">
-                                                    <i class="fa fa-envelope-o"></i>
-                                                    <span>Private Messages</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="dashboard-appointments.html">
-                                                    <i class="fa fa-calendar-check-o"></i>
-                                                    <span>Appointments</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="dashboard-appoinmentsetting.html">
-                                                    <i class="fa fa-gear"></i>
-                                                    <span>Appointment Settings</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="dashboard-favoritlisting.html">
-                                                    <i class="fa fa-heart"></i>
-                                                    <span>Favourite Listings</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="dashboard-invoices.html">
-                                                    <i class="fa fa-clone"></i>
-                                                    <span>Invoices</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="dashboard-upgradepackage.html">
-                                                    <i class="fa fa-arrow-up"></i>
-                                                    <span>Update Package</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="dashboard-securitysettings.html">
-                                                    <i class="fa fa-gears"></i>
-                                                    <span>Security Settings</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="dashboard-privacy-settings.html">
-                                                    <i class="fa fa-eye"></i>
-                                                    <span>Privacy Settings</span>
-                                                </a>
-                                            </li>
-                                            <li>
-                                                <a href="#">
-                                                    <i class="fa fa-sign-out"></i>
-                                                    <span>Logout</span>
-                                                </a>
-                                            </li>
-                                        </ul>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>

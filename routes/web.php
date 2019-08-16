@@ -20,3 +20,5 @@ Auth::routes();
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('consultantInfos','ConsultantInfoController');
+
+Route::get('lang/{locale}', 'HomeController@lang');
