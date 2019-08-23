@@ -581,7 +581,7 @@
                         <div class="tg-description"><p>Join the thousands of people who have changed their way of life with immigration now.</p></div>
                     </div>
                     <div class="tg-regrightarea">
-                        <a class="tg-btn" href="javascript:void(0);">Register Now</a>
+                        <a class="tg-btn" href="{{route('register')}}">Register Now</a>
                     </div>
                 </div>
             </div>
