@@ -8,7 +8,7 @@
                 <div class="col-lg-3 col-md-4 col-sm-4 col-xs-12 pull-left">
                     <div class="tg-widgetdashboard">
                         <div class="tg-widgetprofile">
-                            <figure class="tg-directpostimg"> <a href="#"><img src="images/thumbnails/img-20.jpg" alt="image description"></a>
+                            <figure class="tg-directpostimg"> <a href="#"><img src="{{asset('images/rezaTemplate/thumbnails/img-20.jpg')}}" alt="image description"></a>
                                 <figcaption> <a class="tg-usericon tg-iconfeatured" href="#"> <em class="tg-usericonholder"> <i class="fa fa-bolt"></i> <span>featured</span> </em> </a> <a class="tg-usericon tg-iconvarified" href="#"> <em class="tg-usericonholder"> <i class="fa fa-shield"></i> <span>varified</span> </em> </a> </figcaption>
                             </figure>
                             <div class="tg-directposthead">
