@@ -11,18 +11,20 @@
 |
 */
 
+Auth::routes();
+
 Route::get('/', function () {
-    /**
-     * User $user
-     */
     $user = Auth::user();
     return view('welcome',['user' => $user]);
 });
 
-Auth::routes();
+Route::get('lang/{locale}', 'HomeController@lang');
 
 Route::get('/home', 'HomeController@index')->name('home');
 
 Route::resource('consultantInfos','ConsultantInfoController');
 
-Route::get('lang/{locale}', 'HomeController@lang');
+Route::get('customer/profile', function (){
+    $user = Auth::user();
+    return view('customer.profile',['user' => $user]);
+});

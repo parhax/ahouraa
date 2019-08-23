@@ -14,22 +14,22 @@ $locale = session()->get('locale');
     <meta name="description" content="">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="apple-touch-icon" href="apple-touch-icon.png">
-    <link rel="stylesheet" href="css/rezaTemplate/bootstrap.min.css">
-    <link rel="stylesheet" href="css/rezaTemplate/normalize.css">
-    <link rel="stylesheet" href="css/rezaTemplate/font-awesome.min.css">
-    <link rel="stylesheet" href="css/rezaTemplate/jquery.countdown.css">
-    <link rel="stylesheet" href="css/rezaTemplate/customScrollbar.css">
-    <link rel="stylesheet" href="css/rezaTemplate/bootstrap-timepicker.min.css">
-    <link rel="stylesheet" href="css/rezaTemplate/fullcalendar.min.css">
-    <link rel="stylesheet" href="css/rezaTemplate/owl.carousel.css">
-    <link rel="stylesheet" href="css/rezaTemplate/owl.theme.css">
-    <link rel="stylesheet" href="css/rezaTemplate/jquery-ui.css">
-    <link rel="stylesheet" href="css/rezaTemplate/transitions.css">
-    <link rel="stylesheet" href="css/rezaTemplate/main.css">
-    <link rel="stylesheet" href="css/rezaTemplate/color.css">
-    <link rel="stylesheet" href="css/rezaTemplate/responsive.css">
-    <link rel="stylesheet" href="css/rezaTemplate/rtl.css">
-    <script src="js/rezaTemplate/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
+    <link rel="stylesheet" href="{{asset('css/rezaTemplate/bootstrap.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/rezaTemplate/normalize.css')}}">
+    <link rel="stylesheet" href="{{asset('css/rezaTemplate/font-awesome.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/rezaTemplate/jquery.countdown.css')}}">
+    <link rel="stylesheet" href="{{asset('css/rezaTemplate/customScrollbar.css')}}">
+    <link rel="stylesheet" href="{{asset('css/rezaTemplate/bootstrap-timepicker.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/rezaTemplate/fullcalendar.min.css')}}">
+    <link rel="stylesheet" href="{{asset('css/rezaTemplate/owl.carousel.css')}}">
+    <link rel="stylesheet" href="{{asset('css/rezaTemplate/owl.theme.css')}}">
+    <link rel="stylesheet" href="{{asset('css/rezaTemplate/jquery-ui.css')}}">
+    <link rel="stylesheet" href="{{asset('css/rezaTemplate/transitions.css')}}">
+    <link rel="stylesheet" href="{{asset('css/rezaTemplate/main.css')}}">
+    <link rel="stylesheet" href="{{asset('css/rezaTemplate/color.css')}}">
+    <link rel="stylesheet" href="{{asset('css/rezaTemplate/responsive.css')}}">
+    <link rel="stylesheet" href="{{asset('css/rezaTemplate/rtl.css')}}">
+    <script src="{{ asset('js/rezaTemplate/vendor/modernizr-2.8.3-respond-1.4.2.min.js')}}"></script>
 </head>
 <body class="tg-home tg-login">
 <!--[if lt IE 8]>
@@ -71,7 +71,7 @@ $locale = session()->get('locale');
             <div class="row">
                 <div class="col-sm-12 col-xs-12">
                     <strong class="tg-logo">
-                        <a href="index.html"><img src="images/rezaTemplate/logo.png" alt="image description"></a>
+                        <a href="index.html"><img src="{{asset('images/rezaTemplate/logo.png')}}" alt="image description"></a>
                     </strong>
                     <div class="tg-navigationarea">
                         <nav id="tg-nav" class="tg-nav">
@@ -106,7 +106,7 @@ $locale = session()->get('locale');
                                         <li><a href="/register"> عضو شوید ! </a></li>
                                         <li><a href="/login"> وارد شوید ! </a></li>
                                     @else
-                                        <li><span> سلام {{$user->name}}</span><a href="/customerProfile">  تکمیل پروفایل </a></li>
+                                        <li><span> سلام {{$user->name}}</span><a href="/customer/profile">  تکمیل پروفایل </a></li>
 
                                         <a class="dropdown-item" href="{{ route('logout') }}"
                                            onclick="event.preventDefault();
@@ -184,7 +184,7 @@ $locale = session()->get('locale');
                             <ul>
                                 <li>
                                     <figure class="tg-authordp">
-                                        <img src="images/rezaTemplate/directpost/img-08.jpg" alt="image description">
+                                        <img src="{{asset('images/rezaTemplate/directpost/img-08.jpg')}}" alt="image description">
                                     </figure>
                                     <div class="tg-directposthead">
                                         <h3><a href="#">Dr. Steve Northrop</a></h3>
@@ -193,7 +193,7 @@ $locale = session()->get('locale');
                                 </li>
                                 <li>
                                     <figure class="tg-authordp">
-                                        <img src="images/rezaTemplate/directpost/img-09.jpg" alt="image description">
+                                        <img src="{{asset('images/rezaTemplate/directpost/img-09.jpg')}}" alt="image description">
                                     </figure>
                                     <div class="tg-directposthead">
                                         <h3><a href="#">Dr. Steve Northrop</a></h3>
@@ -202,7 +202,7 @@ $locale = session()->get('locale');
                                 </li>
                                 <li>
                                     <figure class="tg-authordp">
-                                        <img src="images/rezaTemplate/directpost/img-10.jpg" alt="image description">
+                                        <img src="{{asset('images/rezaTemplate/directpost/img-10.jpg')}}" alt="image description">
                                     </figure>
                                     <div class="tg-directposthead">
                                         <h3><a href="#">Dr. Steve Northrop</a></h3>
@@ -236,7 +236,7 @@ $locale = session()->get('locale');
 
                         <div class="tg-fcol">
                             <strong class="tg-logo">
-                                <a href="index.html"><img src="images/rezaTemplate/logo.png" alt="image description"></a>
+                                <a href="index.html"><img src="{{asset('images/rezaTemplate/logo.png')}}" alt="image description"></a>
                             </strong>
                             <ul class="tg-contactinfo">
                                 <li><a href="#"><i class="fa fa-location-arrow"></i><address>North Vancouver, BC, CANADA</address></a></li>
@@ -544,7 +544,7 @@ $locale = session()->get('locale');
                     </div>
                     <div class="tg-regardbox">
                         <span>Regard</span>
-                        <strong class="tg-logo"><a href="#"><img src="images/rezaTemplate/logos.png" alt="image description"></a></strong>
+                        <strong class="tg-logo"><a href="#"><img src="{{asset('images/rezaTemplate/logos.png')}}" alt="image description"></a></strong>
                         <ul class="tg-contactdetail">
                             <li>
                                 <i class="fa fa-phone"></i>
@@ -568,30 +568,30 @@ $locale = session()->get('locale');
 <!--************************************
             Light Box End
 *************************************-->
-<script src="js/rezaTemplate/vendor/jquery-library.js"></script>
-<script src="js/rezaTemplate/vendor/bootstrap.min.js"></script>
-<script src="js/rezaTemplate/mapclustering/data.json"></script>
+<script src="{{ asset('js/rezaTemplate/vendor/jquery-library.js') }}"></script>
+<script src="{{ asset('js/rezaTemplate/vendor/bootstrap.min.js')}}"></script>
+<script src="{{ asset('js/rezaTemplate/mapclustering/data.json')}}"></script>
 <script src="https://maps.google.com/maps/api/js?key=AIzaSyCR-KEWAVCn52mSdeVeTqZjtqbmVJyfSus&language=en"></script>
-<script src="js/rezaTemplate/mapclustering/markerclusterer.min.js"></script>
-<script src="js/rezaTemplate/mapclustering/infobox.js"></script>
-<script src="js/rezaTemplate/bootstrap-timepicker.min.js"></script>
-<script src="js/rezaTemplate/customScrollbar.min.js"></script>
-<script src="js/rezaTemplate/mapclustering/map.js"></script>
-<script src="js/rezaTemplate/jquery.countdown.js"></script>
-<script src="js/rezaTemplate/owl.carousel.min.js"></script>
-<script src="js/rezaTemplate/isotope.pkgd.js"></script>
-<script src="js/rezaTemplate/packery-mode.js"></script>
-<script src="js/rezaTemplate/svg-injector.js"></script>
-<script src="js/rezaTemplate/moment.min.js"></script>
-<script src="js/rezaTemplate/fullcalendar.min.js"></script>
-<script src="js/rezaTemplate/jquery-ui.js"></script>
-<script src="js/rezaTemplate/collapse.js"></script>
-<script src="js/rezaTemplate/parallax.js"></script>
-<script src="js/rezaTemplate/readmore.js"></script>
-<script src="js/rezaTemplate/countTo.js"></script>
-<script src="js/rezaTemplate/loader.js"></script>
-<script src="js/rezaTemplate/appear.js"></script>
-<script src="js/rezaTemplate/gmap3.js"></script>
-<script src="js/rezaTemplate/main.js"></script>
+<script src="{{ asset('js/rezaTemplate/mapclustering/markerclusterer.min.js') }}"></script>
+<script src="{{ asset('js/rezaTemplate/mapclustering/infobox.js') }}"></script>
+<script src="{{ asset('js/rezaTemplate/bootstrap-timepicker.min.js')}}"></script>
+<script src="{{ asset('js/rezaTemplate/customScrollbar.min.js')}}"></script>
+<script src="{{ asset('js/rezaTemplate/mapclustering/map.js')}}"></script>
+<script src="{{ asset('js/rezaTemplate/jquery.countdown.js')}}"></script>
+<script src="{{ asset('js/rezaTemplate/owl.carousel.min.js')}}"></script>
+<script src="{{ asset('js/rezaTemplate/isotope.pkgd.js')}}"></script>
+<script src="{{ asset('js/rezaTemplate/packery-mode.js')}}"></script>
+<script src="{{ asset('js/rezaTemplate/svg-injector.js')}}"></script>
+<script src="{{ asset('js/rezaTemplate/moment.min.js')}}"></script>
+<script src="{{ asset('js/rezaTemplate/fullcalendar.min.js')}}"></script>
+<script src="{{ asset('js/rezaTemplate/jquery-ui.js')}}"></script>
+<script src="{{ asset('js/rezaTemplate/collapse.js')}}"></script>
+<script src="{{ asset('js/rezaTemplate/parallax.js')}}"></script>
+<script src="{{ asset('js/rezaTemplate/readmore.js')}}"></script>
+<script src="{{ asset('js/rezaTemplate/countTo.js')}}"></script>
+<script src="{{ asset('js/rezaTemplate/loader.js')}}"></script>
+<script src="{{ asset('js/rezaTemplate/appear.js')}}"></script>
+<script src="{{ asset('js/rezaTemplate/gmap3.js')}}"></script>
+<script src="{{ asset('js/rezaTemplate/main.js')}}"></script>
 </body>
 </html>
